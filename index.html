@@ -46,7 +46,7 @@ header{position:fixed;inset-inline:0;top:0;z-index:50;transition:.35s;padding:1.
 header.scrolled{background:rgba(10,10,12,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(212,175,55,.18);padding:.7rem 0}
 .nav{display:flex;justify-content:space-between;align-items:center;max-width:1400px;margin:auto;padding:0 2rem}
 .brand{display:flex;align-items:center;gap:.85rem}
-.brand-logo{width:58px;height:58px;background:url('hero.jpg') center/cover no-repeat;border:2px solid var(--gold);border-radius:50%;position:relative;overflow:hidden}
+.brand-logo{width:58px;height:58px;background:url('images/hero.jpg') center/cover no-repeat, url('hero.jpg') center/cover no-repeat;border:2px solid var(--gold);border-radius:50%;position:relative;overflow:hidden}
 .brand-logo::after{content:'AJ';position:absolute;inset:0;display:grid;place-items:center;font-family:var(--serif);font-size:1.2rem;font-weight:700;color:var(--gold2);background:rgba(0,0,0,.5)}
 .brand b{font-family:var(--serif);font-size:1.35rem;color:#fff;letter-spacing:.1em;line-height:1.1}
 .brand small{display:block;font-family:var(--sans);font-size:.68rem;letter-spacing:.42em;text-transform:uppercase;color:var(--gold2);margin-top:2px}
@@ -63,8 +63,8 @@ header.open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
 /* ---------- HERO (Cinematic fullscreen) ---------- */
 .hero{min-height:100vh;display:grid;place-items:center;text-align:center;position:relative;padding:0 1.5rem;
-  background:url('hero.jpg') center/cover no-repeat;
-  background-attachment:fixed}
+    background:url('images/hero.jpg') center/cover no-repeat, url('hero.jpg') center/cover no-repeat;
+  background-attachment:scroll}
 .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,10,.72) 0%,rgba(8,8,10,.45) 40%,rgba(8,8,10,.85) 100%)}
 .hero::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,transparent 40%,rgba(0,0,0,.4) 100%)}
 .hero > div{position:relative;z-index:1;max-width:900px;padding:2rem 0}
@@ -223,7 +223,7 @@ footer{background:#0a0a0c;border-top:1px solid rgba(212,175,55,.2);padding:4rem 
 <!-- ===== ABOUT ===== -->
 <section id="about">
   <div class="wrap about-grid">
-    <div class="frame reveal"><img src="about.jpg" alt="AJ Beauty SPA Therapist"></div>
+    <div class="frame reveal"><img src="images/about.jpg" onerror="this.onerror=null;this.src='about.jpg'" alt="AJ Beauty SPA Therapist"></div>
     <div class="reveal">
       <span class="eyebrow">About Us</span>
       <h2 class="title">Professional Touch, <span class="gold-text">Ultimate Comfort</span></h2>
@@ -270,13 +270,13 @@ footer{background:#0a0a0c;border-top:1px solid rgba(212,175,55,.2);padding:4rem 
     <div class="divider" style="justify-content:center"><span>✦</span></div>
     <p class="lead">A glimpse of the relaxing experience we deliver to our guests.</p>
   </div>
-  <div class="wrap gallery reveal">
-    <a><img src="hero.jpg" alt="Gallery 1"></a>
-    <a><img src="about.jpg" alt="Gallery 2"></a>
-    <a><img src="beauty.jpg" alt="Gallery 3"></a>
-    <a><img src="hero.jpg" alt="Gallery 4"></a>
-    <a><img src="about.jpg" alt="Gallery 5"></a>
-    <a><img src="beauty.jpg" alt="Gallery 6"></a>
+   <div class="wrap gallery reveal">
+    <a><img src="images/hero.jpg" onerror="this.onerror=null;this.src='hero.jpg'" alt="Gallery 1"></a>
+    <a><img src="images/about.jpg" onerror="this.onerror=null;this.src='about.jpg'" alt="Gallery 2"></a>
+    <a><img src="images/beauty.jpg" onerror="this.onerror=null;this.src='beauty.jpg'" alt="Gallery 3"></a>
+    <a><img src="images/hero.jpg" onerror="this.onerror=null;this.src='hero.jpg'" alt="Gallery 4"></a>
+    <a><img src="images/about.jpg" onerror="this.onerror=null;this.src='about.jpg'" alt="Gallery 5"></a>
+    <a><img src="images/beauty.jpg" onerror="this.onerror=null;this.src='beauty.jpg'" alt="Gallery 6"></a>
   </div>
 </section>
 
